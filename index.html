@@ -108,8 +108,7 @@
               </div>
             </div>
             <p class="py-3">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
+              I am looking for an apartment in the cities of Amseterdam or Utrecht. 
             </p>
           </div>
         </div>
@@ -126,34 +125,34 @@
         <div class="row gy-4">
 
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-emoji-smile"></i>
+            <i class="bi bi-globe"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Happy Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-journal-richtext"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-headset"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Countries Lived</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-people"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hard Workers</p>
+              <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Cultures Embraced</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-chat-dots"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Languages Spoken</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-clock-history"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Years of Experience</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -397,21 +396,32 @@
                   </div>
 
                   <div class="col-md-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    <input
+                    class="form-control" 
+                    name="subject" 
+                    required="">
                   </div>
+
+                  <script>
+                    // Pre-filled text
+                    const preFilledSubject = `Sebsatiano Zuddas Tenant Enquiry <date>`;
+                    document.querySelector('input[name="subject"]').value = preFilledSubject;
+                  </script>
 
                   <div class="col-md-12">
                     <textarea 
                         class="form-control" 
                         name="message" 
                         rows="6" 
-                        required="">
-                Hello Seb,
-                I think you will be interested in the property at <property location>.
-                The requirements are <requirements>
-                Please reach out to me at <contact details>.
-                    </textarea>
+                        required=""></textarea>
                   </div>
+                  
+                  <script>
+                    // Pre-filled text
+                    const preFilledText = `
+                  Hello Seb,\nI think you will be interested in the property at <property location>.\nThe requirements are <requirements>\nPlease reach out to me at <contact details>.\nPlease see more information here:<link>`.trim();
+                    document.querySelector('textarea[name="message"]').textContent = preFilledText;
+                  </script>
 
                   <div class="col-md-12 text-center">
                     <button type="submit">Send Message</button>
@@ -438,6 +448,12 @@
       </div>
     </div>
   </footer>
+
+  <!-- Calendly badge widget begin -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/sebastianozuddas1/30min', text: 'Get to know me!', color: '#0069ff', textColor: '#ffffff' }); }</script>
+  <!-- Calendly badge widget end -->
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

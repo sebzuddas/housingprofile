@@ -64,7 +64,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-9">
             <h2>Sebastiano Zuddas</h2>
-            <p>I'm <span class="typed" data-typed-items="International, An Innovator, Organised, Resorceful, ">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <p>I'm <span class="typed" data-typed-items="International, Organised, Resorceful, Italian, English ">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
               <a href="https://www.sebzuddas.com/about"><i class="bi bi-globe"></i></a>
               <a href="https://www.instagram.com/sebzuddas/"><i class="bi bi-instagram"></i></a>
@@ -381,44 +381,47 @@
         <h2>Contact</h2>
         <p>If you are interested in having me as a tenant, don't hesitate to get in touch.</p>
       </div><!-- End Section Title -->
-
+  
       <div class="container d-flex justify-content-center" data-aos="fade" data-aos-delay="100">
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+        <div class="col-lg-8">
+              <form action="https://formspree.io/f/mldelblj" method="post" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea 
+                        class="form-control" 
+                        name="message" 
+                        rows="6" 
+                        required="">
+                Hello Seb,
+                I think you will be interested in the property at <property location>.
+                The requirements are <requirements>
+                Please reach out to me at <contact details>.
+                    </textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <button type="submit">Send Message</button>
+                  </div>
+
                 </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
+              </form>
+            </div>
+          </div>
         </div>
-
-      </div>
 
     </section><!-- /Contact Section -->
 

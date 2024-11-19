@@ -1,0 +1,14 @@
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.map
+*.min.*
+dist/
